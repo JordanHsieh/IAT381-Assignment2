@@ -1,22 +1,22 @@
 
 <div class="container">
 
-	<div ng-repeat="aks in akList2">
+	<div ng-repeat="ak in akList2">
 		<div class="col-xs-6 col-md-6">
-		    <a href="#" class="thumbnail">
-		      	<img src="{{aks}}" alt="...">
+		    <a href="#/guns" ng-click="imageClicked()" class="thumbnail">
+		      	<img src="{{ak.imageUrl}}" alt="...">
 		      	</img>
 		    </a>
 	  </div>
 	</div>
 
-	<div ng-repeat="m4s in m4List2">
+	<!-- <div ng-repeat="m4s in m4List2">
 		<div class="col-xs-6 col-md-6">
 		    <a href="#" class="thumbnail">
 		      	<img src="{{m4s}}" alt="...">
 		    </a>
 	  </div>
-	</div>
+	</div> -->
 
 	<!-- <div class="row">
 	  <div class="col-xs-6 col-md-6">
