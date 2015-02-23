@@ -97,27 +97,63 @@ APP.controller('HomeCtrl', function ($scope) {
 		console.log(APP.akSelected);
 	}
 
+	$('#animateThis').addClass('animated wobble')
+
 	// tile flip
 
 	$scope.akSelected = APP.akSelected;
 
 	$scope.flipped = false;
+	// $scope.flipped1 = false;
+	// $scope.flipped2 = false;
+	// $scope.flipped3 = false;
+	// $scope.flipped4 = false;
+	// $scope.flipped5 = false;
 
-	var countF = 0;
-	var countB = 0;
 
-	
-	$scope.flip = function() {
-		$scope.flipped = !$scope.flipped;
-		console.log('flipping');
-	}
+	// $scope.flip = function() {
+	// 	// $scope.flipped = !$scope.flipped;
+	// 	console.log('flipping');
+	// 	console.log($scope.flipped);
+	// 	$('#animateThis2').addClass('animated flip');
+	// }
+
+	// $scope.flip1 = function() {
+	// 	$scope.flipped1 = !$scope.flipped1;
+	// 	console.log('flipping1');
+	// 	console.log($scope.flipped1);
+	// }
+
+	// $scope.flip2 = function() {
+	// 	$scope.flipped2 = !$scope.flipped2;
+	// 	console.log('flipping2');
+	// 	console.log($scope.flipped2);
+	// }
+
+	// $scope.flip3 = function() {
+	// 	$scope.flipped3 = !$scope.flipped3;
+	// 	console.log('flipping3');
+	// 	console.log($scope.flipped3);
+	// }
+
+	// $scope.flip4 = function() {
+	// 	$scope.flipped4 = !$scope.flipped4;
+	// 	console.log('flipping4');
+	// 	console.log($scope.flipped4);
+	// }
+
+	// $scope.flip5 = function() {
+	// 	$scope.flipped5 = !$scope.flipped5;
+	// 	console.log('flipping5');
+	// 	console.log($scope.flipped5);
+	// }
 
 });
 
 APP.directive("flipper", function() {
 	return {
 		restrict: "E",
-		template: "<div class='flipper' ng-transclude ng-class='{ flipped: flipped }'></div>",
+		template: "<div class='flipper' ng-transclude ng-class='{ flipped: flipped}'></div>",
 		transclude: true,
 		scope: {
 			flipped: "="

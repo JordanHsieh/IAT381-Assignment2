@@ -24,54 +24,35 @@ APP.controller('GunsCtrl', function ($scope) {
 		console.log('flipping');
 	}
 
-
-	// $scope.flipForward = function() {
-	// 	if(countF === 0)
-	// 	{
-	// 		$scope.flipped = !$scope.flipped;
-	// 		console.log('flip');
-	// 		countF++;
-	// 		countB = 0;
-	// 	}
-	// };
-
-	// $scope.flipBack = function() {
-	// 	if(countB === 0)
-	// 	{
-	// 		$scope.flipped = !$scope.flipped;
-	// 		console.log('flip');
-	// 		countB++;
-	// 		countF = 0;
-	// 	}
-	// };
+	$('#bouncey').addClass('animated bounceOutLeft');
 
 });
 
-APP.directive("flipper", function() {
-	return {
-		restrict: "E",
-		template: "<div class='flipper' ng-transclude ng-class='{ flipped: flipped }'></div>",
-		transclude: true,
-		scope: {
-			flipped: "="
-		}
-	};
-});
+// APP.directive("flipper", function() {
+// 	return {
+// 		restrict: "E",
+// 		template: "<div class='flipper' ng-transclude ng-class='{ flipped: flipped }'></div>",
+// 		transclude: true,
+// 		scope: {
+// 			flipped: "="
+// 		}
+// 	};
+// });
 
-APP.directive("front", function() {
-	return {
-		restrict: "E",
-		template: "<div class='front tile' ng-transclude></div>",
-		transclude: true
-	};
-});
+// APP.directive("front", function() {
+// 	return {
+// 		restrict: "E",
+// 		template: "<div class='front tile' ng-transclude></div>",
+// 		transclude: true
+// 	};
+// });
 
-APP.directive("back", function() {
-	return {
-		restrict: "E",
-		template: "<div class='back tile' ng-transclude></div>",
-		transclude: true
-	}
-});
+// APP.directive("back", function() {
+// 	return {
+// 		restrict: "E",
+// 		template: "<div class='back tile' ng-transclude></div>",
+// 		transclude: true
+// 	}
+// });
 
 
