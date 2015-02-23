@@ -19,25 +19,31 @@ APP.controller('GunsCtrl', function ($scope) {
 	var countF = 0;
 	var countB = 0;
 
-	$scope.flipForward = function() {
-		if(countF === 0)
-		{
-			$scope.flipped = !$scope.flipped;
-			console.log('flip');
-			countF++;
-			countB = 0;
-		}
-	};
+	$scope.flip = function() {
+		$scope.flipped = !$scope.flipped;
+		console.log('flipping');
+	}
 
-	$scope.flipBack = function() {
-		if(countB === 0)
-		{
-			$scope.flipped = !$scope.flipped;
-			console.log('flip');
-			countB++;
-			countF = 0;
-		}
-	};
+
+	// $scope.flipForward = function() {
+	// 	if(countF === 0)
+	// 	{
+	// 		$scope.flipped = !$scope.flipped;
+	// 		console.log('flip');
+	// 		countF++;
+	// 		countB = 0;
+	// 	}
+	// };
+
+	// $scope.flipBack = function() {
+	// 	if(countB === 0)
+	// 	{
+	// 		$scope.flipped = !$scope.flipped;
+	// 		console.log('flip');
+	// 		countB++;
+	// 		countF = 0;
+	// 	}
+	// };
 
 });
 
