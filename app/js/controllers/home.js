@@ -17,34 +17,34 @@ APP.controller('HomeCtrl', function ($scope) {
 
 	$scope.akList = [
 		{
-			name: 'Cartel',
-			imageUrl: 'img/akCartel.png',
-			url: '#/guns/Cartel'
+			name: 'Blue Tile',
+			imageUrl: 'img/bluetile.png',
+			url: '#/guns/BlueTile'
 		},
 		{
-			name: 'Case Hardened',
-			imageUrl: 'img/akCaseHardened.png',
-			url: '#/guns/CaseHardened'
+			name: 'Green Tile',
+			imageUrl: 'img/greentile.png',
+			url: '#/guns/GreenTile'
 		},
 		{
-			name: 'Fire Serpent',
-			imageUrl: 'img/akFireSerpent.png',
-			url: '#/guns/FireSerpent'
+			name: 'Grey Tile',
+			imageUrl: 'img/greytile.png',
+			url: '#/guns/GreyTile'
 		},
 		{
-			name: 'Vulcan',
-			imageUrl: 'img/akVulcan.png',
-			url: '#/guns/Vulcan'
+			name: 'Pink Tile',
+			imageUrl: 'img/pinktile.png',
+			url: '#/guns/PinkTile'
 		},
 		{
-			name: 'Jet Set',
-			imageUrl: 'img/akJetSet.png',
-			url: '#/guns/JetSet'
+			name: 'Red Tile',
+			imageUrl: 'img/redtile.png',
+			url: '#/guns/RedTile'
 		},
 		{
-			name: 'Wasteland Rebel',
-			imageUrl: 'img/akWastelandRebel.png',
-			url: '#/guns/WastelandRebel'
+			name: 'Yellow Tile',
+			imageUrl: 'img/yellowtile.png',
+			url: '#/guns/YellowTile'
 		}
 	];
 

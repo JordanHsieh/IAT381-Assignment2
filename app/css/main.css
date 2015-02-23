@@ -1,5 +1,14 @@
-.thumbnail img { 
-	min-height:100px; height:100px;
-	min-width:100px; width:100px;
+img { 
+	height:170px;
+	width:170px;
+
+	margin-bottom: 10px;
 }
 
+#imgLeft {
+	float: left;
+}
+
+#imgRight {
+	float: right;
+}
