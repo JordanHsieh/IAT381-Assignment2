@@ -22,9 +22,9 @@ var APP = angular
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl'
       })
-      .when('/guns', {
-        templateUrl : 'views/guns.html',
-        controller  : 'GunsCtrl'
+      .when('/fontImage', {
+        templateUrl : 'views/fontImage.html',
+        controller  : 'FontImageCtrl'
       })
       .otherwise({
         redirectTo: '/'

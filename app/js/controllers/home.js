@@ -15,44 +15,44 @@
 
 APP.controller('HomeCtrl', function ($scope) {
 
-	$scope.akList = [
+	$scope.tileList = [
 		{
-			name: 'Blue Tile',
+			name: 'BlueTile',
 			imageUrl: 'img/bluetile.png',
-			url: '#/guns/BlueTile'
+			url: '#/fontImage/BlueTile'
 		},
 		{
-			name: 'Green Tile',
+			name: 'GreenTile',
 			imageUrl: 'img/greentile.png',
-			url: '#/guns/GreenTile'
+			url: '#/fontImage/GreenTile'
 		},
 		{
-			name: 'Grey Tile',
+			name: 'GreyTile',
 			imageUrl: 'img/greytile.png',
-			url: '#/guns/GreyTile'
+			url: '#/fontImage/GreyTile'
 		},
 		{
-			name: 'Pink Tile',
+			name: 'PinkTile',
 			imageUrl: 'img/pinktile.png',
-			url: '#/guns/PinkTile'
+			url: '#/fontImage/PinkTile'
 		},
 		{
-			name: 'Red Tile',
+			name: 'RedTile',
 			imageUrl: 'img/redtile.png',
-			url: '#/guns/RedTile'
+			url: '#/fontImage/RedTile'
 		},
 		{
-			name: 'Yellow Tile',
+			name: 'YellowTile',
 			imageUrl: 'img/yellowtile.png',
-			url: '#/guns/YellowTile'
+			url: '#/fontImage/YellowTile'
 		}
 	];
 
 
-	console.log('akList length is ' + $scope.akList.length);
+	console.log('tileList length is ' + $scope.tileList.length);
 	// console.log('m4list length is ' + APP.m4List.length);	
 
-	$scope.akList2 = [];
+	$scope.tileList2 = [];
 
 	function shuffle(array) {
 	    var i = array.length,
@@ -76,9 +76,9 @@ APP.controller('HomeCtrl', function ($scope) {
 	console.log(ranNums);
 	console.log('ranNums length is ' + ranNums.length);
 
-	console.log('-- Printing a list of AK Images --');
-	$scope.akList2 = getRandomImageList($scope.akList2, $scope.akList);
-	$scope.akList = $scope.akList2;
+	console.log('-- Printing a list of Tile Images --');
+	$scope.tileList2 = getRandomImageList($scope.tileList2, $scope.tileList);
+	$scope.tileList = $scope.tileList2;
 
 	function getRandomImageList(shortList, longList){
 		for(var i=0; i<ranNums.length; i++)
@@ -91,27 +91,30 @@ APP.controller('HomeCtrl', function ($scope) {
 
 	$scope.imageClicked = function() {
 
-		var ak = this.ak;
-		APP.akSelected = ak;
-		console.log('AK selected is ');
-		console.log(APP.akSelected);
+		// storing the tile that was clicked
+		var tile = this.tile;
+		APP.tileSelected = tile;
+
+		// adding EXIT animation
+		console.log('tile name is');
+		console.log('#tile' + tile.name);
+		$('#' + tile.name).addClass('animated flipOutY');
+
+		console.log('Tile selected is ');
+		console.log(APP.tileSelected);
+		console.log('Tile selected URL is ' + tile.url)
+
+		// routing to another page
+		setTimeout(function() {
+    		window.location = '#/fontImage';
+    	}, 850);
+
 	}
 
-	// $('#animateThis').addClass('animated wobble')
-	angular.forEach($scope.akList2, function(gun) {
-		angular.element(gun).hide();//.addClass('animated wobble');
-	});
 
 	// tile flip
-
-	$scope.akSelected = APP.akSelected;
-
+	$scope.tileSelected = APP.tileSelected;
 	$scope.flipped = false;
-	// $scope.flipped1 = false;
-	// $scope.flipped2 = false;
-	// $scope.flipped3 = false;
-	// $scope.flipped4 = false;
-	// $scope.flipped5 = false;
 
 
 	$scope.flip = function() {
@@ -119,36 +122,6 @@ APP.controller('HomeCtrl', function ($scope) {
 		console.log('flipping');
 		console.log($scope.flipped);
 		$('#animateThis2').addClass('animated flip');
-	}
-
-	$scope.flip1 = function() {
-		$scope.flipped1 = !$scope.flipped1;
-		console.log('flipping1');
-		console.log($scope.flipped1);
-	}
-
-	$scope.flip2 = function() {
-		$scope.flipped2 = !$scope.flipped2;
-		console.log('flipping2');
-		console.log($scope.flipped2);
-	}
-
-	$scope.flip3 = function() {
-		$scope.flipped3 = !$scope.flipped3;
-		console.log('flipping3');
-		console.log($scope.flipped3);
-	}
-
-	$scope.flip4 = function() {
-		$scope.flipped4 = !$scope.flipped4;
-		console.log('flipping4');
-		console.log($scope.flipped4);
-	}
-
-	$scope.flip5 = function() {
-		$scope.flipped5 = !$scope.flipped5;
-		console.log('flipping5');
-		console.log($scope.flipped5);
 	}
 
 });

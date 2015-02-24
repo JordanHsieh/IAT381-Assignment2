@@ -1,8 +1,20 @@
+.tiles {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  column-count: 2;
+}
+
 img { 
-	height:170px;
-	width:170px;
+	height:100%;
+	width:100%;
 
 }
+
+#imageFull {
+  height: 545px;
+  width: 100%;
+}
+
+
 
 /*#imgLeft {
 	float: left;
