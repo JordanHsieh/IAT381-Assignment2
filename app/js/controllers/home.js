@@ -97,7 +97,10 @@ APP.controller('HomeCtrl', function ($scope) {
 		console.log(APP.akSelected);
 	}
 
-	$('#animateThis').addClass('animated wobble')
+	// $('#animateThis').addClass('animated wobble')
+	angular.forEach($scope.akList2, function(gun) {
+		angular.element(gun).hide();//.addClass('animated wobble');
+	});
 
 	// tile flip
 
@@ -111,42 +114,42 @@ APP.controller('HomeCtrl', function ($scope) {
 	// $scope.flipped5 = false;
 
 
-	// $scope.flip = function() {
-	// 	// $scope.flipped = !$scope.flipped;
-	// 	console.log('flipping');
-	// 	console.log($scope.flipped);
-	// 	$('#animateThis2').addClass('animated flip');
-	// }
+	$scope.flip = function() {
+		// $scope.flipped = !$scope.flipped;
+		console.log('flipping');
+		console.log($scope.flipped);
+		$('#animateThis2').addClass('animated flip');
+	}
 
-	// $scope.flip1 = function() {
-	// 	$scope.flipped1 = !$scope.flipped1;
-	// 	console.log('flipping1');
-	// 	console.log($scope.flipped1);
-	// }
+	$scope.flip1 = function() {
+		$scope.flipped1 = !$scope.flipped1;
+		console.log('flipping1');
+		console.log($scope.flipped1);
+	}
 
-	// $scope.flip2 = function() {
-	// 	$scope.flipped2 = !$scope.flipped2;
-	// 	console.log('flipping2');
-	// 	console.log($scope.flipped2);
-	// }
+	$scope.flip2 = function() {
+		$scope.flipped2 = !$scope.flipped2;
+		console.log('flipping2');
+		console.log($scope.flipped2);
+	}
 
-	// $scope.flip3 = function() {
-	// 	$scope.flipped3 = !$scope.flipped3;
-	// 	console.log('flipping3');
-	// 	console.log($scope.flipped3);
-	// }
+	$scope.flip3 = function() {
+		$scope.flipped3 = !$scope.flipped3;
+		console.log('flipping3');
+		console.log($scope.flipped3);
+	}
 
-	// $scope.flip4 = function() {
-	// 	$scope.flipped4 = !$scope.flipped4;
-	// 	console.log('flipping4');
-	// 	console.log($scope.flipped4);
-	// }
+	$scope.flip4 = function() {
+		$scope.flipped4 = !$scope.flipped4;
+		console.log('flipping4');
+		console.log($scope.flipped4);
+	}
 
-	// $scope.flip5 = function() {
-	// 	$scope.flipped5 = !$scope.flipped5;
-	// 	console.log('flipping5');
-	// 	console.log($scope.flipped5);
-	// }
+	$scope.flip5 = function() {
+		$scope.flipped5 = !$scope.flipped5;
+		console.log('flipping5');
+		console.log($scope.flipped5);
+	}
 
 });
 
