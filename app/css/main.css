@@ -1,12 +1,15 @@
-.tiles {
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  column-count: 2;
+.tilesColumn1 {
+  padding-left: 10px;
+  float: left;
 }
 
-img { 
+.tilesColumn2 {
+  float: left;
+}
+
+#tiles { 
 	height:100%;
 	width:100%;
-
 }
 
 #imageFull {
@@ -25,11 +28,6 @@ img {
 	float: right;
 	margin-left: 2.5px;
 }*/
-
-#flipBtn {
-	margin-top: 50px;
-	margin-left: 15px;
-}
 
 ._1 {
   -webkit-animation-delay: 0.4s;

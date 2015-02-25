@@ -15,7 +15,7 @@
 
 APP.controller('HomeCtrl', function ($scope) {
 
-	$scope.tileList = [
+	$scope.tileListA = [
 		{
 			name: 'BlueTile',
 			imageUrl: 'img/bluetile.png',
@@ -30,7 +30,10 @@ APP.controller('HomeCtrl', function ($scope) {
 			name: 'GreyTile',
 			imageUrl: 'img/greytile.png',
 			url: '#/fontImage/GreyTile'
-		},
+		}
+	];
+
+	$scope.tileListB = [
 		{
 			name: 'PinkTile',
 			imageUrl: 'img/pinktile.png',
@@ -49,11 +52,14 @@ APP.controller('HomeCtrl', function ($scope) {
 	];
 
 
-	console.log('tileList length is ' + $scope.tileList.length);
-	// console.log('m4list length is ' + APP.m4List.length);	
+	console.log('tileListA length is ' + $scope.tileListA.length);
+	console.log('tileListB length is ' + $scope.tileListB.length);
 
+	// initializing the empty array
 	$scope.tileList2 = [];
+	$scope.tileList3 = [];
 
+	// start -- shuffling function
 	function shuffle(array) {
 	    var i = array.length,
 	        j = 0,
@@ -71,14 +77,23 @@ APP.controller('HomeCtrl', function ($scope) {
 	    return array;
 	}
 
-	var ranNums = shuffle([0,1,2,3,4,5]);
+	// var ranNums = shuffle([0,1,2,3,4,5]);
+	var ranNums = shuffle([0,1,2]);
+
+	// end -- shuffling function
 
 	console.log(ranNums);
 	console.log('ranNums length is ' + ranNums.length);
 
 	console.log('-- Printing a list of Tile Images --');
-	$scope.tileList2 = getRandomImageList($scope.tileList2, $scope.tileList);
-	$scope.tileList = $scope.tileList2;
+	// titleListA
+	$scope.tileList2 = getRandomImageList($scope.tileList2, $scope.tileListA);
+	$scope.tileListA = $scope.tileList2;
+	// titleListB
+	$scope.tileList3 = getRandomImageList($scope.tileList3, $scope.tileListB);
+	$scope.tileListB = $scope.tileList3;
+
+
 
 	function getRandomImageList(shortList, longList){
 		for(var i=0; i<ranNums.length; i++)

@@ -1,10 +1,21 @@
 <div id="animateThis">
-	<div class="tiles">
+	<div class="tilesColumn1">
 		<div ng-repeat="tile in tileList2">
 			<!-- <div class="col-xs-6 col-md-6"> -->
 			
 			    <a ng-click="imageClicked()" id="{{tile.name}}" class='animated flipInY _{{$index}}'>
-			      	<img src="{{tile.imageUrl}}" alt="...">
+			      	<img src="{{tile.imageUrl}}" alt="..." id="tiles">
+			      	</img>
+			    </a>
+		  	
+		</div>
+	</div>
+	<div class="tilesColumn2">
+		<div ng-repeat="tile in tileList3">
+			<!-- <div class="col-xs-6 col-md-6"> -->
+			
+			    <a ng-click="imageClicked()" id="{{tile.name}}" class='animated flipInY _{{$index}}'>
+			      	<img src="{{tile.imageUrl}}" alt="..." id="tiles">
 			      	</img>
 			    </a>
 		  	
@@ -12,7 +23,7 @@
 	</div>
 </div>
 
-<div>
+<div class="refresh">
 	<a href="#/home">Refresh</a>
 </div>
 
