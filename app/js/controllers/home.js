@@ -17,13 +17,13 @@ APP.controller('HomeCtrl', function ($scope) {
 
 	$scope.tileListA = [
 		{
-			fontName: 'BlueTile',
-			color: '',
+			fontName: 'Roboto',
+			color: '#02A54F',
 			imageUrl: 'img/fontTiles-01.png',
 		},
 		{
-			fontName: 'GreenTile',
-			color: '',
+			fontName: 'Garamond',
+			color: '#29ABE2',
 			imageUrl: 'img/fontTiles-02.png',
 		},
 		{
@@ -32,7 +32,7 @@ APP.controller('HomeCtrl', function ($scope) {
 			imageUrl: 'img/fontTiles-03.png',
 		},
 		{
-			fontName: 'PinkTile',
+			fontName: 'Roboto Slab',
 			color: '',
 			imageUrl: 'img/fontTiles-04.png',
 		},
