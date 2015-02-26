@@ -16,6 +16,10 @@
 	width:100%;
 }
 
+#refresh {
+	float: left;
+}
+
 
 #imageFull {
   height: 550px;
