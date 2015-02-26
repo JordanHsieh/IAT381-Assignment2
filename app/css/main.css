@@ -1,5 +1,5 @@
 .tilesColumn1 {
-  padding: 5px;
+  padding-left: 10px;
   float: left;
   /*  -webkit-column-count: 2; /* Chrome, Safari, Opera */
     /*-moz-column-count: 2; /* Firefox */*/
@@ -7,7 +7,7 @@
 }
 
 .tilesColumn2 {
-  padding: 5px;
+  /*padding: 5px*/;
   float: left;
 }
 
