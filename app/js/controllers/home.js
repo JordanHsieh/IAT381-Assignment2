@@ -18,17 +18,17 @@ APP.controller('HomeCtrl', function ($scope) {
 	$scope.tileListA = [
 		{
 			name: 'BlueTile',
-			imageUrl: 'img/bluetile.png',
+			imageUrl: 'img/fontTiles-01.png',
 			url: '#/fontImage/BlueTile'
 		},
 		{
 			name: 'GreenTile',
-			imageUrl: 'img/greentile.png',
+			imageUrl: 'img/fontTiles-02.png',
 			url: '#/fontImage/GreenTile'
 		},
 		{
 			name: 'GreyTile',
-			imageUrl: 'img/greytile.png',
+			imageUrl: 'img/fontTiles-03.png',
 			url: '#/fontImage/GreyTile'
 		}
 	];
@@ -36,17 +36,17 @@ APP.controller('HomeCtrl', function ($scope) {
 	$scope.tileListB = [
 		{
 			name: 'PinkTile',
-			imageUrl: 'img/pinktile.png',
+			imageUrl: 'img/fontTiles-04.png',
 			url: '#/fontImage/PinkTile'
 		},
 		{
 			name: 'RedTile',
-			imageUrl: 'img/redtile.png',
+			imageUrl: 'img/fontTiles-05.png',
 			url: '#/fontImage/RedTile'
 		},
 		{
 			name: 'YellowTile',
-			imageUrl: 'img/yellowtile.png',
+			imageUrl: 'img/fontTiles-06.png',
 			url: '#/fontImage/YellowTile'
 		}
 	];
