@@ -14,11 +14,11 @@ APP.controller('FontImageCtrl', function ($scope) {
 
 	$scope.tileSelected = APP.tileSelected;
 
+	$scope.clicked = true;
+
+	$scope.clickImage = function () {
+		$scope.clicked = !$scope.clicked;
+	}
 
 });
 
-$(document).ready(function() {
-  $("#cf_onclick").click(function() {
-  $("#cf2 img.top").toggleClass("transparent");
-});
-});

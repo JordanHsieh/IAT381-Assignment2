@@ -1,5 +1,7 @@
-<div id="cf" class="animated zoomIn">
+
+
+<div id="cf2" class="animated zoomIn" ng-click="clickImage()">
 	<!-- <img src="{{tileSelected.imageUrl}}" id="imageFull" class="animated fadeIn"> -->
-	<img class="bottom" src=img/textpage.png id="imageFull"/>
-	<img class="top" src="{{tileSelected.imageUrl}}" id="imageFull" />
+	<img ng-class="{transparent: clicked}" class="bottom" src=img/textpage.png id="imageFull"/>
+	<img ng-class="{transparent: !clicked}" class="top" src="{{tileSelected.imageUrl}}" id="imageFull" />
 </div>
