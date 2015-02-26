@@ -18,11 +18,13 @@ APP.controller('HomeCtrl', function ($scope) {
 	$scope.tileListA = [
 		{
 			fontName: 'Roboto',
+			cssName:'font-roboto'
 			color: '#02A54F',
 			imageUrl: 'img/fontTiles-01.png',
 		},
 		{
-			fontName: 'Garamond',
+			fontName: 'EB Garamond',
+			cssName:'font-eb-garamond'
 			color: '#29ABE2',
 			imageUrl: 'img/fontTiles-02.png',
 		},
@@ -33,7 +35,8 @@ APP.controller('HomeCtrl', function ($scope) {
 		},
 		{
 			fontName: 'Roboto Slab',
-			color: '',
+			cssName:'font-roboto-slab',
+			color: '#30358F',
 			imageUrl: 'img/fontTiles-04.png',
 		},
 		{
@@ -50,8 +53,8 @@ APP.controller('HomeCtrl', function ($scope) {
 
 	$scope.tileListB = [
 		{
-			fontName: 'BlueTile',
-			color: '',
+			fontName: 'Arventa',
+			color: '#EF5A2C',
 			imageUrl: 'img/fontTiles-07.png',
 		},
 		{
