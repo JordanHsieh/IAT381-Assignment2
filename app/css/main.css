@@ -23,6 +23,13 @@
   padding: 5px;
 }
 
+#imageFull2 {
+  height: 550px;
+  width: 100%;
+  padding: 5px;
+
+}
+
 /*image fade animation*/
 #cf2 {
   position:relative;
@@ -33,12 +40,24 @@
 
 #cf2 img {
   position:absolute;
-  top:0;
   left:0;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
+}
+
+#cf2 div {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf2 div.transparent {
+  opacity:0;
 }
 
 #cf2 img.transparent {

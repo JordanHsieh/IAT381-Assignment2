@@ -14,7 +14,10 @@ APP.controller('FontImageCtrl', function ($scope) {
 
 	$scope.tileSelected = APP.tileSelected;
 
-	$scope.clicked = true;
+	$scope.clicked = false;
+
+	$(imageFull2).css('color', $scope.tileSelected.color);
+	$(imageFull2).css('background-color', $scope.tileSelected.color);
 
 	$scope.clickImage = function () {
 		$scope.clicked = !$scope.clicked;

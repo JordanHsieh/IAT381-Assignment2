@@ -18,13 +18,13 @@ APP.controller('HomeCtrl', function ($scope) {
 	$scope.tileListA = [
 		{
 			fontName: 'Roboto',
-			cssName:'font-roboto'
+			cssName:'font-roboto',
 			color: '#02A54F',
 			imageUrl: 'img/fontTiles-01.png',
 		},
 		{
-			fontName: 'EB Garamond',
-			cssName:'font-eb-garamond'
+			fontName: 'EBGaramond',
+			cssName:'font-eb-garamond',
 			color: '#29ABE2',
 			imageUrl: 'img/fontTiles-02.png',
 		},
@@ -34,7 +34,7 @@ APP.controller('HomeCtrl', function ($scope) {
 			imageUrl: 'img/fontTiles-03.png',
 		},
 		{
-			fontName: 'Roboto Slab',
+			fontName: 'RobotoSlab',
 			cssName:'font-roboto-slab',
 			color: '#30358F',
 			imageUrl: 'img/fontTiles-04.png',
@@ -85,9 +85,6 @@ APP.controller('HomeCtrl', function ($scope) {
 	];
 
 
-	console.log('tileListA length is ' + $scope.tileListA.length);
-	console.log('tileListB length is ' + $scope.tileListB.length);
-
 	// initializing the empty array
 	$scope.tileList2 = [];
 	$scope.tileList3 = [];
@@ -114,9 +111,6 @@ APP.controller('HomeCtrl', function ($scope) {
 	var ranNums = shuffle([0,1,2]);
 
 	// end -- shuffling function
-
-	console.log(ranNums);
-	console.log('ranNums length is ' + ranNums.length);
 
 	console.log('-- Printing a list of Tile Images --');
 	// titleListA
@@ -145,12 +139,12 @@ APP.controller('HomeCtrl', function ($scope) {
 
 		// adding EXIT animation
 		console.log('tile name is');
-		console.log('#tile' + tile.name);
-		$('#' + tile.name).addClass('animated flipOutY');
+		console.log('#tile' + tile.fontName);
+		$('#' + tile.fontName).addClass('animated flipOutY');
 
 		console.log('Tile selected is ');
 		console.log(APP.tileSelected);
-		console.log('Tile selected URL is ' + tile.url)
+		console.log('Tile selected URL is ' + tile.imageUrl)
 
 		// routing to another page
 		setTimeout(function() {
@@ -159,18 +153,6 @@ APP.controller('HomeCtrl', function ($scope) {
 
 	}
 
-
-	// tile flip
-	$scope.tileSelected = APP.tileSelected;
-	$scope.flipped = false;
-
-
-	$scope.flip = function() {
-		// $scope.flipped = !$scope.flipped;
-		console.log('flipping');
-		console.log($scope.flipped);
-		$('#animateThis2').addClass('animated flip');
-	}
 
 });
 
