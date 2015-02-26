@@ -17,37 +17,67 @@ APP.controller('HomeCtrl', function ($scope) {
 
 	$scope.tileListA = [
 		{
-			name: 'BlueTile',
+			fontName: 'BlueTile',
+			color: '',
 			imageUrl: 'img/fontTiles-01.png',
-			url: '#/fontImage/BlueTile'
 		},
 		{
-			name: 'GreenTile',
+			fontName: 'GreenTile',
+			color: '',
 			imageUrl: 'img/fontTiles-02.png',
-			url: '#/fontImage/GreenTile'
 		},
 		{
-			name: 'GreyTile',
+			fontName: 'GreyTile',
+			color: '',
 			imageUrl: 'img/fontTiles-03.png',
-			url: '#/fontImage/GreyTile'
+		},
+		{
+			fontName: 'PinkTile',
+			color: '',
+			imageUrl: 'img/fontTiles-04.png',
+		},
+		{
+			fontName: 'RedTile',
+			color: '',
+			imageUrl: 'img/fontTiles-05.png',
+		},
+		{
+			fontName: 'YellowTile',
+			color: '',
+			imageUrl: 'img/fontTiles-06.png',
 		}
 	];
 
 	$scope.tileListB = [
 		{
-			name: 'PinkTile',
-			imageUrl: 'img/fontTiles-04.png',
-			url: '#/fontImage/PinkTile'
+			fontName: 'BlueTile',
+			color: '',
+			imageUrl: 'img/fontTiles-07.png',
 		},
 		{
-			name: 'RedTile',
-			imageUrl: 'img/fontTiles-05.png',
-			url: '#/fontImage/RedTile'
+			fontName: 'GreenTile',
+			color: '',
+			imageUrl: 'img/fontTiles-08.png',
 		},
 		{
-			name: 'YellowTile',
-			imageUrl: 'img/fontTiles-06.png',
-			url: '#/fontImage/YellowTile'
+			fontName: 'GreyTile',
+			color: '',
+			imageUrl: 'img/fontTiles-09.png',
+		},
+		{
+			fontName: 'PinkTile',
+			color: '',
+			imageUrl: 'img/fontTiles-10.png',
+		},
+		{
+			fontName: 'RedTile',
+			color: '',
+			imageUrl: 'img/fontTiles-11.png',
+		},
+		{
+			fontName: 'YellowTile',
+			color: '',
+			imageUrl: 'img/fontTiles-12.png',
 		}
 	];
 

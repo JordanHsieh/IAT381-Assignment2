@@ -33,6 +33,7 @@
 
 #cf2 img {
   position:absolute;
+  top:0;
   left:0;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
