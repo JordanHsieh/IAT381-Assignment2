@@ -1,9 +1,13 @@
 .tilesColumn1 {
-  padding-left: 10px;
+  padding: 5px;
   float: left;
+  /*  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    /*-moz-column-count: 2; /* Firefox */*/
+    /*column-count: 2;*/*/
 }
 
 .tilesColumn2 {
+  padding: 5px;
   float: left;
 }
 
@@ -12,12 +16,37 @@
 	width:100%;
 }
 
+
 #imageFull {
   height: 550px;
   width: 100%;
+  padding: 5px;
 }
 
+/*image fade animation*/
+#cf {
+  position:relative;
+  height:100%;
+  width:100%;
+  margin:0 auto;
+}
 
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+/*#cf img.bottom:hover {
+  opacity:100;
+}*/
 
 /*#imgLeft {
 	float: left;
@@ -28,6 +57,8 @@
 	float: right;
 	margin-left: 2.5px;
 }*/
+
+/*tile animations*/
 
 ._1 {
   -webkit-animation-delay: 0.4s;

@@ -15,5 +15,4 @@ APP.controller('FontImageCtrl', function ($scope) {
 	$scope.tileSelected = APP.tileSelected;
 
 
-
 });
