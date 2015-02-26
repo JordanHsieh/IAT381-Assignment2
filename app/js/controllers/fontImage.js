@@ -12,6 +12,35 @@
 
 APP.controller('FontImageCtrl', function ($scope) {
 
+	$scope.imageList = ['img/image1.png', 'img/image2.png', 'img/image3.png', 'img/image4.png', 'img/image5.png'];
+
+	// start -- shuffling function
+	function shuffle(array) {
+	    var i = array.length,
+	        j = 0,
+	        temp;
+
+	    while (i--) {
+
+	        j = Math.floor(Math.random() * (i+1));
+
+	        // swap randomly chosen element with current element
+	        temp = array[i];
+	        array[i] = array[j];
+	        array[j] = temp;
+	    }
+	    return array;
+	}
+
+	var ranNums = shuffle([0,1,2,3,4]);
+	console.log(ranNums);
+	var imageSelected = $scope.imageList[ranNums[0]];
+	console.log(imageSelected);
+
+	$(imageFull).css('background-image', 'url(' + imageSelected + ')');
+
+
+	// getting selected tile
 	$scope.tileSelected = APP.tileSelected;
 
 	$scope.clicked = false;

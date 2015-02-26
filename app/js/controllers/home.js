@@ -29,7 +29,7 @@ APP.controller('HomeCtrl', function ($scope) {
 			imageUrl: 'img/fontTiles-02.png',
 		},
 		{
-			fontName: 'GreyTile',
+			fontName: 'A',
 			color: '',
 			imageUrl: 'img/fontTiles-03.png',
 		},
@@ -40,12 +40,12 @@ APP.controller('HomeCtrl', function ($scope) {
 			imageUrl: 'img/fontTiles-04.png',
 		},
 		{
-			fontName: 'RedTile',
+			fontName: 'B',
 			color: '',
 			imageUrl: 'img/fontTiles-05.png',
 		},
 		{
-			fontName: 'YellowTile',
+			fontName: 'C',
 			color: '',
 			imageUrl: 'img/fontTiles-06.png',
 		}
@@ -58,27 +58,27 @@ APP.controller('HomeCtrl', function ($scope) {
 			imageUrl: 'img/fontTiles-07.png',
 		},
 		{
-			fontName: 'GreenTile',
+			fontName: 'D',
 			color: '',
 			imageUrl: 'img/fontTiles-08.png',
 		},
 		{
-			fontName: 'GreyTile',
+			fontName: 'E',
 			color: '',
 			imageUrl: 'img/fontTiles-09.png',
 		},
 		{
-			fontName: 'PinkTile',
+			fontName: 'F',
 			color: '',
 			imageUrl: 'img/fontTiles-10.png',
 		},
 		{
-			fontName: 'RedTile',
+			fontName: 'G',
 			color: '',
 			imageUrl: 'img/fontTiles-11.png',
 		},
 		{
-			fontName: 'YellowTile',
+			fontName: 'H',
 			color: '',
 			imageUrl: 'img/fontTiles-12.png',
 		}
@@ -108,7 +108,7 @@ APP.controller('HomeCtrl', function ($scope) {
 	}
 
 	// var ranNums = shuffle([0,1,2,3,4,5]);
-	var ranNums = shuffle([0,1,2]);
+	var ranNums = shuffle([0,1,2,3,4,5]);
 
 	// end -- shuffling function
 
@@ -123,7 +123,7 @@ APP.controller('HomeCtrl', function ($scope) {
 
 
 	function getRandomImageList(shortList, longList){
-		for(var i=0; i<ranNums.length; i++)
+		for(var i=0; i<3; i++)
 		{
 			shortList.push(longList[ranNums[i]]);
 			console.log(longList[ranNums[i]]);

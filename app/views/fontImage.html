@@ -4,13 +4,10 @@
 	
 
 	<div ng-class="{transparent: clicked}" class="top" id="imageFull2">
-		<p> SAMPLE TEXT </p>
+		<h1> SAMPLE TEXT </h1>
 	</div>
 	
-	<img ng-class="{transparent: !clicked}" class="bottom"  src=img/imagePage.png id="imageFull" />
+	<!-- <img ng-class="{transparent: !clicked}" class="bottom"  src=img/image1-01.png id="imageFull" /> -->
+	<img ng-class="{transparent: !clicked}" class="bottom"  src="{{imageSelected}}" id="imageFull" />
 
-	
-	
-	
-	
 </div>
