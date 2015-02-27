@@ -1,58 +1,44 @@
  <style type="text/css">
-      body{
-
-        
-        /*Serifs*/
+/*      body{
+        padding-top:75px;
+        font-color: #333333;}*/
             
-            .font-roboto-slab {
-                font-family: 'Roboto Slab';
+            .font-roboto {
+                font-family: 'Roboto';
             }
             .font-eb-garamond {
                 font-family: 'EB Garamond';   
             }
-            .font-noto-serif {
-                font-family: 'Noto Serif';   
+            .font-slabo {
+                font-family: 'Slabo';   
             }
-            .font-pt-serif {
-                font-family: 'PT Serif';   
+            .font-oswald {
+                font-family: 'Oswald';   
             }
-            .font-quattrocento {
-                font-family: 'Quattrocento';   
+            .font-lora {
+                font-family: 'Lora';   
+            }
+            .font-dancing-script {
+                font-family: 'Dancing Script';   
             }
             .font-arvo {
                 font-family: 'Arvo';   
             }
-
-          /*Sans Serifs*/
-          
-          .font-open-sans {
-              font-family: 'Open Sans';
-          }
-          .font-lato {
-              font-family: 'Lato';
-          }
-          .font-roboto {
-              font-family: 'Roboto';
-          }
-          .font-raleway {
-              font-family: 'Raleway';
-          }
-          .font-pt-sans {
-              font-family: 'PT Sans';
-          }
-           .font-anton {
-              font-family: 'Anton';
-          }
-          .font-kelly-slab {
-              font-family: 'Kelly Slab';
-          }
-          .font-noto-sans {
-                font-family: 'Noto Sans';   
+            .font-cac-champagne {
+                font-family: 'CAC Champagne';   
             }
-          .font-oswald {
-              font-family: 'Oswald';   
-          }
-          .font-source-sans-pro {
-              font-family: 'Source Sans Pro';   
-          }
+            .font-open-sans {
+                font-family: 'Open Sans';   
+            }
+            .font-raleway {
+                font-family: 'Raleway';   
+            }
+            .font-sail {
+                font-family: 'Sail';   
+            }
+            .font-quicksand {
+                font-family: 'Quicksand';   
+            }
+
         </style>
+    
