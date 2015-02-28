@@ -1,3 +1,27 @@
+#blue{
+  position:absolute;
+  top:100px;
+    left:100px;
+  width:200px;
+    height:200px;
+  background-color:blue;
+  cursor:pointer;
+  right:
+}
+
+.font1 {
+  font-size: 200%;
+  font-family: 'Roboto Slab';
+  color: red;
+}
+
+.font2 {
+  font-size: 200%;
+  font-family: 'EB Garamond';
+  color: blue;
+}
+
+
 .tilesColumn1 {
   /*padding-left: 0px;*/
   padding-left: 10px;

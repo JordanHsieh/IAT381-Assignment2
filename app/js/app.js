@@ -26,6 +26,10 @@ var APP = angular
         templateUrl : 'views/fontImage.html',
         controller  : 'FontImageCtrl'
       })
+      .when('/fontSwipe', {
+        templateUrl : 'views/fontSwipe.html',
+        controller  : 'FontSwipeCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
