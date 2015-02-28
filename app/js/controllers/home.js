@@ -19,68 +19,89 @@ APP.controller('HomeCtrl', function ($scope) {
 		{
 			fontName: 'Roboto',
 			cssName:'font-roboto',
-			color: '#02A54F',
-			imageUrl: 'img/fontTiles-01.png',
+			color: '#00a651',
+			imageUrl: 'img/fontTiles/roboto.png',
+		
 		},
 		{
-			fontName: 'EBGaramond',
+			fontName: 'EB Garamond',
 			cssName:'font-eb-garamond',
-			color: '#29ABE2',
-			imageUrl: 'img/fontTiles-02.png',
+			color: '#00aeef',
+			imageUrl: 'img/fontTiles/garamond.png',
+		
 		},
 		{
-			fontName: 'A',
-			color: '',
-			imageUrl: 'img/fontTiles-03.png',
+			fontName: 'Slabo',
+			cssName:'font-slabo',
+			color: '#2e3192',
+			imageUrl: 'img/fontTiles/slabo.png',
+		
 		},
 		{
-			fontName: 'RobotoSlab',
-			cssName:'font-roboto-slab',
-			color: '#30358F',
-			imageUrl: 'img/fontTiles-04.png',
+			fontName: 'Oswald',
+			cssName:'font-oswald',
+			color: '#ec008c',
+			imageUrl: 'img/fontTiles/oswald.png',
+		
 		},
 		{
-			fontName: 'B',
-			color: '',
-			imageUrl: 'img/fontTiles-05.png',
+			fontName: 'Lora',
+			cssName:'font-lora',
+			color: '#8dc63f',
+			imageUrl: 'img/fontTiles/lora.png',
+		
 		},
 		{
-			fontName: 'C',
-			color: '',
-			imageUrl: 'img/fontTiles-06.png',
+			fontName: 'Dancing Script',
+			cssName:'font-dancing-script',
+			color: '#f7941e',
+			imageUrl: 'img/fontTiles/dancing-script.png',
+		
 		}
 	];
 
 	$scope.tileListB = [
 		{
-			fontName: 'Arventa',
-			color: '#EF5A2C',
-			imageUrl: 'img/fontTiles-07.png',
+			fontName: 'Arvo',
+			cssName:'font-arvo',
+			color: '#f15a29',
+			imageUrl: 'img/fontTiles/arvo.png',
+		
 		},
 		{
-			fontName: 'D',
-			color: '',
-			imageUrl: 'img/fontTiles-08.png',
+			fontName: 'Lobster',
+			cssName:'font-lobster',
+			color: '#be1e2d',
+			imageUrl: 'img/fontTiles/lobster.png',
+		
 		},
 		{
-			fontName: 'E',
-			color: '',
-			imageUrl: 'img/fontTiles-09.png',
+			fontName: 'Open Sans',
+			cssName:'font-open-sans',
+			color: '#262262',
+			imageUrl: 'img/fontTiles/open-sans.png',
+		
 		},
 		{
-			fontName: 'F',
-			color: '',
-			imageUrl: 'img/fontTiles-10.png',
+			fontName: 'Raleway',
+			cssName:'font-raleway',
+			color: '#662d91',
+			imageUrl: 'img/fontTiles/raleway.png',
+		
 		},
 		{
-			fontName: 'G',
-			color: '',
-			imageUrl: 'img/fontTiles-11.png',
+			fontName: 'Sail',
+			cssName:'font-sail',
+			color: '#92278f',
+			imageUrl: 'img/fontTiles/sail.png',
+		
 		},
 		{
-			fontName: 'H',
-			color: '',
-			imageUrl: 'img/fontTiles-12.png',
+			fontName: 'Quicksand',
+			cssName:'font-quicksand',
+			color: '#9e1f63',
+			imageUrl: 'img/fontTiles/quicksand.png',
+
 		}
 	];
 
