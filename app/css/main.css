@@ -54,7 +54,20 @@
 
 h1 {
   text-align: center;
+  vertical-align: center;
   color: white;
+}
+
+p {
+
+  text-align: center;
+  color: white;
+  font-size: 1.25em;
+}
+
+.font-emphasis {
+  font-size: 1.25em;
+  font-weight: 500;
 }
 
 
