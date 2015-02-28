@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> origin/gh-pages
 .font-roboto {
     font-family: 'Roboto';
 }
@@ -33,5 +39,62 @@
 }
 .font-quicksand {
     font-family: 'Quicksand';   
+<<<<<<< HEAD
 
+=======
+
+/*Serifs*/
+
+.font-roboto-slab {
+    font-family: 'Roboto Slab';
+}
+.font-eb-garamond {
+    font-family: 'EB Garamond';   
+}
+.font-noto-serif {
+    font-family: 'Noto Serif';   
+}
+.font-pt-serif {
+    font-family: 'PT Serif';   
+}
+.font-quattrocento {
+    font-family: 'Quattrocento';   
+}
+.font-arvo {
+    font-family: 'Arvo';   
+}
+
+/*Sans Serifs*/
+
+.font-open-sans {
+    font-family: 'Open Sans';
+}
+.font-lato {
+    font-family: 'Lato';
+}
+.font-roboto {
+    font-family: 'Roboto';
+}
+.font-raleway {
+    font-family: 'Raleway';
+}
+.font-pt-sans {
+    font-family: 'PT Sans';
+}
+ .font-anton {
+    font-family: 'Anton';
+}
+.font-kelly-slab {
+    font-family: 'Kelly Slab';
+}
+.font-noto-sans {
+    font-family: 'Noto Sans';   
+}
+.font-oswald {
+    font-family: 'Oswald';   
+}
+.font-source-sans-pro {
+    font-family: 'Source Sans Pro';   
+
+>>>>>>> origin/gh-pages
 }

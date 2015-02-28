@@ -9,16 +9,12 @@
   right:
 }
 
-.font1 {
-  font-size: 200%;
-  font-family: 'Roboto Slab';
-  color: red;
-}
-
-.font2 {
-  font-size: 200%;
-  font-family: 'EB Garamond';
-  color: blue;
+#sampleText {
+  position:absolute;
+  top: 280px;
+  left: 20px;
+  text-align: center;
+  font-size: 400%;
 }
 
 
