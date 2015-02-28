@@ -12,7 +12,7 @@
 
 APP.controller('FontImageCtrl', function ($scope) {
 
-	$scope.imageList = ['img/image1.png', 'img/image2.png', 'img/image3.png', 'img/image4.png', 'img/image5.png'];
+	$scope.imageList = ['img/photos/photo1.png', 'img/photos/photo2.png', 'img/photos/photo3.png', 'img/photos/photo4.png', 'img/photos/photo5.png'];
 
 	// start -- shuffling function
 	function shuffle(array) {
