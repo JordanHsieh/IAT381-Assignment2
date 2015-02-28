@@ -16,7 +16,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 	hammer.on('swipeleft', function(){
 
 		// $(blue).animate({ip: "-=100"}, 500)
-		$("#event").text("swipe left " + fonts[fontCount]);
+		$("#event").text("swipe left " + fonts[fontCount] + " " + fontCount);
 		$(text).toggleClass(fonts[fontCount]);
 		fontCount++;
 		if(fontCount > 11)
@@ -27,7 +27,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 
 	hammer.on('swiperight', function(){
 	   // $(blue).animate({down: "+=100"}, 500) 
-	   $("#event").text("swipe right " + fonts[fontCount]);
+	   $("#event").text("swipe right " + fonts[fontCount] + " " + fontCount);
 	   $(text).toggleClass(fonts[fontCount]);
 	   fontCount--;
 	   if(fontCount < 0)
