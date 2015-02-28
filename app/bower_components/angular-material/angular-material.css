@@ -2953,7 +2953,7 @@ md-bottom-sheet {
   border: 0;
   padding: 6px;
   margin: 0;
-  background: transparent;
+  background: #caecfc;
   white-space: nowrap;
   text-align: center;
   text-transform: uppercase;
@@ -2961,6 +2961,7 @@ md-bottom-sheet {
   font-style: inherit;
   font-variant: inherit;
   font-size: inherit;
+  font-color: #fff;
   font-family: inherit;
   line-height: inherit;
   text-decoration: none;

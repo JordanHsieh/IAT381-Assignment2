@@ -45,6 +45,7 @@ template {
 }
 a {
   background-color: transparent;
+
 }
 a:active,
 a:hover {
@@ -4457,6 +4458,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default .navbar-link {
+
   color: #777;
 }
 .navbar-default .navbar-link:hover {

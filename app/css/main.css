@@ -70,6 +70,16 @@ p {
   font-weight: 500;
 }
 
+.refresh-button{
+  float:center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  width: 100%;
+  height: 48px;
+
+
+}
 
 
 /*image fade animation*/
