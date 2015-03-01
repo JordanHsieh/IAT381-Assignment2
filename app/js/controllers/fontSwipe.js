@@ -4,37 +4,70 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 				'font-dancing-script', 'font-arvo', 'font-cac-champagne', 'font-open-sans', 'font-raleway',
 				'font-sail', 'font-quicksand'];
 
-	// var blue      = document.getElementById('blue');
+	var images = ['photo1', 'photo2', 'photo3', 'photo4', 'photo5'];
+
 	var text 	  = document.getElementById('sampleText');
 	var hammer    = new Hammer.Manager(text);
 	var swipe     = new Hammer.Swipe();
 
+	var bgImage	  = document.getElementById('backgroundImage');
+
+
 	hammer.add(swipe);
 
 	var fontCount = 0;
+	var imageCount = 0;
 
 	hammer.on('swipeleft', function(){
 
 		// $(blue).animate({ip: "-=100"}, 500)
 		$("#event").text("swipe left " + fonts[fontCount] + " " + fontCount);
+		// toggle off
 		$(text).toggleClass(fonts[fontCount]);
 		fontCount++;
 		if(fontCount > 11)
 		{
 			fontCount = 0;
 		}
+		$(text).toggleClass(fonts[fontCount]);
 	});
 
 	hammer.on('swiperight', function(){
 	   // $(blue).animate({down: "+=100"}, 500) 
 	   $("#event").text("swipe right " + fonts[fontCount] + " " + fontCount);
+	   // toggle off
 	   $(text).toggleClass(fonts[fontCount]);
 	   fontCount--;
 	   if(fontCount < 0)
 	   {
 	   	fontCount = 11;
 	   }
-	   
+	   $(text).toggleClass(fonts[fontCount]);
 	});
+
+	hammer.on('swipeup', function(){
+		$("#event").text("swipe up");
+		// toggle off the class before
+		$(bgImage).toggleClass(images[imageCount]);
+		imageCount++;
+		if(imageCount > 4)
+		{
+			imageCount = 0;
+		}
+		$(bgImage).toggleClass(images[imageCount]);
+	});
+
+	hammer.on('swipedown', function(){
+		$("#event").text("swipe down");
+		// toggle off the class before
+		$(bgImage).toggleClass(images[imageCount]);
+		imageCount--;
+		if(imageCount < 0)
+		{
+			imageCount = 4;
+		}
+		$(bgImage).toggleClass(images[imageCount]);
+	});
+
 
 });
