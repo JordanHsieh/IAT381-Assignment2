@@ -24,7 +24,7 @@ APP.controller('HomeCtrl', function ($scope) {
 		
 		},
 		{
-			fontName: 'EB Garamond',
+			fontName: 'EBGaramond',
 			cssName:'font-eb-garamond',
 			color: '#00aeef',
 			imageUrl: 'img/fontTiles/garamond.png',
@@ -52,7 +52,7 @@ APP.controller('HomeCtrl', function ($scope) {
 		
 		},
 		{
-			fontName: 'Dancing Script',
+			fontName: 'DancingScript',
 			cssName:'font-dancing-script',
 			color: '#f7941e',
 			imageUrl: 'img/fontTiles/dancing-script.png',
@@ -76,7 +76,7 @@ APP.controller('HomeCtrl', function ($scope) {
 		
 		},
 		{
-			fontName: 'Open Sans',
+			fontName: 'OpenSans',
 			cssName:'font-open-sans',
 			color: '#262262',
 			imageUrl: 'img/fontTiles/open-sans.png',
