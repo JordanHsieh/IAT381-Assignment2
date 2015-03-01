@@ -1,8 +1,13 @@
 APP.controller('FontSwipeCtrl', function ($scope) {
 
-	var fonts = ['font-roboto', 'font-eb-garamond', 'font-slabo', 'font-oswald', 'font-lora',
-				'font-dancing-script', 'font-arvo', 'font-cac-champagne', 'font-open-sans', 'font-raleway',
-				'font-sail', 'font-quicksand'];
+	// var fonts = ['font-roboto', 'font-eb-garamond', 'font-slabo', 'font-oswald', 'font-lora',
+	// 			'font-dancing-script', 'font-arvo', 'font-cac-champagne', 'font-open-sans', 'font-raleway',
+	// 			'font-sail', 'font-quicksand'];
+
+	var fonts = ['roboto', 'eb-garamond', 'slabo', 'oswald', 'lora',
+				'dancing-script', 'arvo', 'cac-champagne', 'open-sans', 'raleway',
+				'sail', 'quicksand'];
+
 
 	var images = ['photo1', 'photo2', 'photo3', 'photo4', 'photo5'];
 
@@ -30,6 +35,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 			fontCount = 0;
 		}
 		$(text).toggleClass(fonts[fontCount]);
+		$('#sampleText').text('Sample Text ' + fonts[fontCount]);
 	});
 
 	hammer.on('swiperight', function(){
@@ -43,6 +49,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 	   	fontCount = 11;
 	   }
 	   $(text).toggleClass(fonts[fontCount]);
+	   $('#sampleText').text('Sample Text ' + fonts[fontCount]);
 	});
 
 	hammer.on('swipeup', function(){
