@@ -1,3 +1,9 @@
+.splashPage {
+	background-image: url('../img/imagepage.png');
+	height: 550px;
+	width: 100%;
+}
+
 .photo1 {
 	background-image: url('../img/photos/photo1.png');
 	height: 550px;

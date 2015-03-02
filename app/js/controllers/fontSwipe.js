@@ -4,17 +4,18 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 	// 			'font-dancing-script', 'font-arvo', 'font-cac-champagne', 'font-open-sans', 'font-raleway',
 	// 			'font-sail', 'font-quicksand'];
 
-	var fonts = ['roboto', 'eb-garamond', 'slabo', 'oswald', 'lora',
+	var fonts = ['comic', 'roboto', 'eb-garamond', 'slabo', 'oswald', 'lora',
 				'dancing-script', 'arvo', 'cac-champagne', 'open-sans', 'raleway',
 				'sail', 'quicksand'];
 
 
-	var images = ['photo1', 'photo2', 'photo3', 'photo4', 'photo5'];
+	var images = ['splashPage' , 'photo1', 'photo2', 'photo3', 'photo4', 'photo5'];
 
-	var text 	  = document.getElementById('sampleText');
-	var hammer    = new Hammer.Manager(text);
+	var container = document.getElementById('sampleContainer');
+	var hammer    = new Hammer.Manager(container);
 	var swipe     = new Hammer.Swipe();
 
+	var text 	  = document.getElementById('sampleText');
 	var bgImage	  = document.getElementById('backgroundImage');
 
 
@@ -24,7 +25,6 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 	var imageCount = 0;
 
 	hammer.on('swipeleft', function(){
-
 		// $(blue).animate({ip: "-=100"}, 500)
 		$("#event").text("swipe left " + fonts[fontCount] + " " + fontCount);
 		// toggle off
@@ -32,7 +32,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 		fontCount++;
 		if(fontCount > 11)
 		{
-			fontCount = 0;
+			fontCount = 1;
 		}
 		$(text).toggleClass(fonts[fontCount]);
 		$('#sampleText').text('Sample Text ' + fonts[fontCount]);
@@ -44,7 +44,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 	   // toggle off
 	   $(text).toggleClass(fonts[fontCount]);
 	   fontCount--;
-	   if(fontCount < 0)
+	   if(fontCount < 1)
 	   {
 	   	fontCount = 11;
 	   }
@@ -59,7 +59,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 		imageCount++;
 		if(imageCount > 4)
 		{
-			imageCount = 0;
+			imageCount = 1;
 		}
 		$(bgImage).toggleClass(images[imageCount]);
 	});
@@ -69,7 +69,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 		// toggle off the class before
 		$(bgImage).toggleClass(images[imageCount]);
 		imageCount--;
-		if(imageCount < 0)
+		if(imageCount < 1)
 		{
 			imageCount = 4;
 		}

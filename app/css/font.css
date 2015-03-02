@@ -1,4 +1,5 @@
 
+
 .font-roboto {
     font-family: 'Roboto';
 }
@@ -37,6 +38,9 @@
 }
 
 /*test*/
+.comic {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
 
 .roboto {
     font-family: 'Roboto';
