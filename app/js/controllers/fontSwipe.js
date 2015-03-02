@@ -30,7 +30,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 		// toggle off
 		$(text).toggleClass(fonts[fontCount]);
 		fontCount++;
-		if(fontCount > 12)
+		if(fontCount > 13)
 		{
 			fontCount = 1;
 		}
