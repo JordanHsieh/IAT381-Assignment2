@@ -40,6 +40,14 @@
 	width:100%;
 }
 
+#sampleText {
+    font-family: 'Open Sans';
+    line-height: 0.5;
+    padding: 8px;
+    padding-bottom: 30px;
+    margin: 30px;
+    font-size: 1em;
+}
 
 #imageFull {
   height: 550px;
@@ -80,8 +88,6 @@ p {
   text-align: center;
   width: 100%;
   height: 48px;
-
-
 }
 
 

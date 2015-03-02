@@ -1,35 +1,35 @@
 .splashPage {
-	background-image: url('../img/imagepage.png');
+	/*background-image: url('../img/fontSwipe-splash.png');*/
 	height: 550px;
-	width: 100%;
+
 }
 
 .photo1 {
 	background-image: url('../img/photos/photo1.png');
 	height: 550px;
-	width: 100%;
+	/*width: 100%;*/
 }
 
 .photo2 {
 	background-image: url('../img/photos/photo2.png');
 	height: 550px;
-	width: 100%;
+	/*width: 100%;*/
 }
 
 .photo3 {
 	background-image: url('../img/photos/photo3.png');
 	height: 550px;
-	width: 100%;
+	/*width: 100%;*/
 }
 
 .photo4 {
 	background-image: url('../img/photos/photo4.png');
 	height: 550px;
-	width: 100%;
+	/*width: 100%;*/
 }
 
 .photo5 {
 	background-image: url('../img/photos/photo5.png');
 	height: 550px;
-	width: 100%;
+	/*width: 100%;*/
 }
