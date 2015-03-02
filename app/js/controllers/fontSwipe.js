@@ -15,7 +15,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 	var hammer    = new Hammer.Manager(container);
 	var swipe     = new Hammer.Swipe();
 
-	var text 	  = document.getElementById('sampleText');
+	var text 	  = document.getElementById('splashText');
 	var bgImage	  = document.getElementById('backgroundImage');
 
 
@@ -35,7 +35,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 			fontCount = 1;
 		}
 		$(text).toggleClass(fonts[fontCount]);
-		$('#sampleText').text(fonts[fontCount]);
+		$('#splashText').text(fonts[fontCount]);
 	});
 
 	hammer.on('swiperight', function(){
@@ -49,7 +49,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 	   	fontCount = 12;
 	   }
 	   $(text).toggleClass(fonts[fontCount]);
-	   $('#sampleText').text(fonts[fontCount]);
+	   $('#splashText').text(fonts[fontCount]);
 	});
 
 	hammer.on('swipeup', function(){
