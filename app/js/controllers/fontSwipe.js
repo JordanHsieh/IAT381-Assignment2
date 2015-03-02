@@ -4,9 +4,9 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 	// 			'font-dancing-script', 'font-arvo', 'font-cac-champagne', 'font-open-sans', 'font-raleway',
 	// 			'font-sail', 'font-quicksand'];
 
-	var fonts = ['comic', 'roboto', 'eb-garamond', 'slabo', 'oswald', 'lora',
-				'dancing-script', 'arvo', 'cac-champagne', 'open-sans', 'raleway',
-				'sail', 'quicksand'];
+	var fonts = ['comic', 'Roboto', 'EB-Garamond', 'Slabo', 'Oswald', 'Lora',
+				'Dancing-Script', 'Arvo', 'Lobster', 'Open-Sans', 'Raleway',
+				'Sail', 'Quicksand'];
 
 
 	var images = ['splashPage' , 'photo1', 'photo2', 'photo3', 'photo4', 'photo5'];
