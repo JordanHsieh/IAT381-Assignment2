@@ -5,30 +5,30 @@
 
 .photo1 {
 	background-image: url('../img/photos/photo1.png');
-	height: 550px;
+	height: 100%;
 	/*width: 100%;*/
 }
 
 .photo2 {
 	background-image: url('../img/photos/photo2.png');
-	height: 550px;
+	height: 100%;
 	/*width: 100%;*/
 }
 
 .photo3 {
 	background-image: url('../img/photos/photo3.png');
-	height: 550px;
+	height: 100%;
 	/*width: 100%;*/
 }
 
 .photo4 {
 	background-image: url('../img/photos/photo4.png');
-	height: 550px;
+	height: 100%;
 	/*width: 100%;*/
 }
 
 .photo5 {
 	background-image: url('../img/photos/photo5.png');
-	height: 550px;
+	height: 100%;
 	/*width: 100%;*/
 }
