@@ -30,7 +30,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 		// toggle off
 		$(text).toggleClass(fonts[fontCount]);
 		fontCount++;
-		if(fontCount > 11)
+		if(fontCount > 12)
 		{
 			fontCount = 1;
 		}
@@ -46,7 +46,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 	   fontCount--;
 	   if(fontCount < 1)
 	   {
-	   	fontCount = 11;
+	   	fontCount = 12;
 	   }
 	   $(text).toggleClass(fonts[fontCount]);
 	   $('#splashText').text('Sample Text ' + fonts[fontCount]);
