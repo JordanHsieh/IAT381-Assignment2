@@ -57,7 +57,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 		// toggle off the class before
 		$(bgImage).toggleClass(images[imageCount]);
 		imageCount++;
-		if(imageCount > 4)
+		if(imageCount > 5)
 		{
 			imageCount = 1;
 		}
@@ -71,7 +71,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 		imageCount--;
 		if(imageCount < 1)
 		{
-			imageCount = 4;
+			imageCount = 5;
 		}
 		$(bgImage).toggleClass(images[imageCount]);
 	});
