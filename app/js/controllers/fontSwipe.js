@@ -35,7 +35,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 			fontCount = 1;
 		}
 		$(text).toggleClass(fonts[fontCount]);
-		$('#splashText').text('Sample Text ' + fonts[fontCount]);
+		$('#splashText').text(fonts[fontCount]);
 	});
 
 	hammer.on('swiperight', function(){
@@ -49,7 +49,7 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 	   	fontCount = 12;
 	   }
 	   $(text).toggleClass(fonts[fontCount]);
-	   $('#splashText').text('Sample Text ' + fonts[fontCount]);
+	   $('#splashText').text(fonts[fontCount]);
 	});
 
 	hammer.on('swipeup', function(){
