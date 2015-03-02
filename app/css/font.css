@@ -38,10 +38,9 @@
 }
 
 /*test*/
-.comic {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+.splash {
+    font-family: 'Open Sans', sans-serif;
 }
-
 
 .roboto {
     font-family: 'Roboto';
