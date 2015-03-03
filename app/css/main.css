@@ -11,6 +11,10 @@
   cursor:pointer;
 }
 
+.backgroundImage {
+  height: 555px;
+}
+
 #splashText {
   position:relative;
   top: 75px;
@@ -23,7 +27,7 @@
   color: white;
 }
 
-#sampleText
+/*#sampleText
 {
   position:relative;
   top: 200px;
@@ -34,7 +38,7 @@
   padding-bottom: 30px;
   margin: 30px;
   color: white;
-}
+}*/
 
 .tilesColumn1 {
   /*padding-left: 0px;*/
