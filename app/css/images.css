@@ -1,3 +1,9 @@
+.splashBackground {
+	background-color: #27aae1;
+	height: 550px;
+	width: 360px;
+}
+
 .splashPage {
 	background-image: url('../img/instructions-02.png');
 	padding-top:1px;

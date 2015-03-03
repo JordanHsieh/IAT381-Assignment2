@@ -22,11 +22,18 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 
 	var fontCount = 0;
 	var imageCount = 0;
+	var splashBg = false;
 
 	hammer.on('swipeleft', function(){
 		// $(blue).animate({ip: "-=100"}, 500)
 		$("#event").text("swipe left " + fonts[fontCount] + " " + fontCount);
 		// toggle off
+		if(splashBg == false)
+		{
+			$(bgImage).removeClass('splashPage');
+			$(bgImage).addClass('splashBackground');
+			splashBg = true;
+		}
 		$(text).toggleClass(fonts[fontCount]);
 		fontCount++;
 		if(fontCount > 12)
@@ -41,6 +48,12 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 	   // $(blue).animate({down: "+=100"}, 500) 
 	   $("#event").text("swipe right " + fonts[fontCount] + " " + fontCount);
 	   // toggle off
+	   if(splashBg == false)
+		{
+			$(bgImage).removeClass('splashPage');
+			$(bgImage).addClass('splashBackground');
+			splashBg = true;
+		}
 	   $(text).toggleClass(fonts[fontCount]);
 	   fontCount--;
 	   if(fontCount < 1)
