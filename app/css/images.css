@@ -10,6 +10,10 @@
 	/*height: 588px;*/
 	/*width: 100%;*/
 
+#instructions {
+	padding-right: 20px;
+}
+
 
 .photo1 {
 	background-image: url('../img/photos/photo1.png');
