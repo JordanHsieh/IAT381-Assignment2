@@ -5,10 +5,10 @@
 }
 
 .splashPage {
-	background-image: url('../img/instructions-02.png');
+	background-image: url('../img/instructions-01.png');
 	padding-top:1px;
 	height: 588px;
-	width: 100%;
+	/*width: 100%;*/
 }
 
 .photo1 {
