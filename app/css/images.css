@@ -1,15 +1,15 @@
-.splashBackground {
+/*.splashBackground {
 	background-color: #27aae1;
 	height: 550px;
 	width: 360px;
 }
 
 .splashPage {
-	background-image: url('../img/instructions-01.png');
+	background-image: url('../img/instructions.png');
 	padding-top:1px;
 	/*height: 588px;*/
 	/*width: 100%;*/
-}
+
 
 .photo1 {
 	background-image: url('../img/photos/photo1.png');
