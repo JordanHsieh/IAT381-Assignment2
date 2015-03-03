@@ -18,7 +18,6 @@ APP.controller('FontSwipeCtrl', function ($scope) {
 	var text 	  = document.getElementById('splashText');
 	var bgImage	  = document.getElementById('backgroundImage');
 
-
 	hammer.add(swipe);
 
 	var fontCount = 0;
